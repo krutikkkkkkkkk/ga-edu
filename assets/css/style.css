@@ -518,7 +518,7 @@ section {
   font-size: 14px;
   font-weight: 500;
   padding: 0;
-  line-height: 1px;
+  /* line-height: 1px; */
   margin: 0 0 5px 0;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -526,14 +526,7 @@ section {
   font-family: "Poppins", sans-serif;
 }
 
-.section-title h2::after {
-  content: "";
-  width: 120px;
-  height: 1px;
-  display: inline-block;
-  background: #9ae1af;
-  margin: 4px 10px;
-}
+
 
 .section-title p {
   margin: 0;
@@ -577,9 +570,10 @@ section {
   color: #fff;
 }
 .whychose {
-  background: #E83338;
+  background: #2889EA;
   color: #fff;
 }
+
 .about .content h3 {
   font-weight: 600;
   font-size: 26px;
@@ -1602,4 +1596,9 @@ section {
   background: #E83338;
   color: #fff;
   text-decoration: none;
+}
+
+a{
+  text-decoration: none;
+  color: #fff!important;
 }
