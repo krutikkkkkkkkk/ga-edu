@@ -255,6 +255,7 @@ h6 {
   font-size: 14px;
   text-transform: none;
   font-weight: 500;
+  color: #111;
 }
 
 .navbar .dropdown ul a i {
@@ -320,6 +321,13 @@ h6 {
   .navbar ul {
     display: none;
   }
+}
+
+@media screen and (max-width: 320px) {
+  #hero{
+    height: auto!important
+  }
+  
 }
 
 .navbar-mobile {
@@ -422,6 +430,7 @@ h6 {
 
 
 .subscribe-btn {
+  width: fit-content;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   text-transform: uppercase;
@@ -441,29 +450,24 @@ h6 {
   background: transparent;
   color: var(--red);
 }
-
-
-@media (max-width: 992px) {
-  #hero .container {
-    padding-top: 62px;
-  }
-  #hero {
-    height: auto;
-    margin-top: 70px;
-  }
-  .subscribe-btn {
-    font-size: 1.5rem!important;
-  }
+.hero-img {
+  margin-top: 3rem;
 }
 
-
 .hero-title {
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: bolder;
   line-height: auto;
   color: #ffcd1e;
   font-family: "Poppins", sans-serif;
   text-transform: uppercase;
+}
+.hero-col {
+  margin-top: 2rem;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .hero-sub {
   margin-top: .5rem;
@@ -473,19 +477,59 @@ h6 {
   font-weight: 400;
   font-family: "Poppins", sans-serif;
 }
+.col-blue{
+  background-color: #00a8ff;
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+@media (max-width: 992px) {
+  #hero .container {
+    padding-top: 62px;
+  }
+  #hero {
+    height: auto;
+  }
+  .hero-col{
+    height: auto;
+  }
 
+  .subscribe-btn {
+    font-size: 1.5rem!important;
+  }
+}
 
 @media (min-width: 1024px) {
   #hero {
     background-attachment: fixed;
   }
+  .hero-col{
+    /* margin-top: 0; */
+    height: auto;
+  }
 }
 
 @media (max-width: 768px) {
   #hero {
-    height: 100vh;
+    height: auto;
   }
+  .hero-col{
+    height: auto;
+    margin-top: 3rem;
+  }
+
+  .subscribe-btn {
+    font-size: 1.5rem!important;
+  }
+  
 
   #hero h1 {
     font-size: 28px;
@@ -525,8 +569,6 @@ section {
   color: #aaaaaa;
   font-family: "Poppins", sans-serif;
 }
-
-
 
 .section-title p {
   margin: 0;
@@ -1355,7 +1397,7 @@ section {
 .contact .php-email-form .sent-message {
   display: none;
   color: #fff;
-  background: #18d26e;
+  background: #E83338;
   text-align: center;
   padding: 15px;
   font-weight: 600;
@@ -1375,7 +1417,7 @@ section {
   width: 24px;
   height: 24px;
   margin: 0 10px -6px 0;
-  border: 3px solid #18d26e;
+  border: 3px solid var(--red);
   border-top-color: #eee;
   -webkit-animation: animate-loading 1s linear infinite;
   animation: animate-loading 1s linear infinite;
@@ -1598,7 +1640,3 @@ section {
   text-decoration: none;
 }
 
-a{
-  text-decoration: none;
-  color: #fff!important;
-}
